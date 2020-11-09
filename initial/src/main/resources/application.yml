@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/blog_data?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    driverClassName: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+mybatis:
+  config-location: mybatis/mybatis-config.xml
+  mapper-locations: mybatis/mapper/*.xml
+  type-aliases-package: com.pandy.blog.po
